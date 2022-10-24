@@ -1,7 +1,6 @@
 const Whatsapp = require('whatsapp-web.js');
 const {Collection} = require('discord.js')
 const qrcode = require("qrcode-terminal");
-const message = require('./eventos/message/message');
 
 const client = new Whatsapp.Client({
     authStrategy: new Whatsapp.LocalAuth(),
