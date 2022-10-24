@@ -4,23 +4,27 @@ const { List } = require("whatsapp-web.js");
 const mp4 = require('../../comandos/youtube/mp4.js')
 const tiktokmp4 = require('../../comandos/tiktok/mp4.js')
 
-const tiktokmp3 = require('../../comandos/tiktok/mp3.js')
+const tiktokmp3 = require('../../comandos/tiktok/mp3.js');
+const mp3 = require("../../comandos/youtube/mp3.js");
 
 module.exports = async (client, message) => { 
   const quotedMsg = await message.getQuotedMessage();
   if(quotedMsg){
  
 
-  if(quotedMsg.body == 'Responda essa mensagem com o link do video'){
-    if(!message.links) return message.reply("Cadê o link?")
+  if(quotedMsg.body == 'Responda essa mensagem com o link do vídeo'){
+   
             mp4.execute(message, client, message.body);
 
    }
-  if(quotedMsg.body == 'Responda essa mensagem com o link do video do tiktok'){
+   if(quotedMsg.body == 'Responda essa mensagem com o link do vídeo MP3'){
+    mp3.execute(message, client, message.body)
+   }
+  if(quotedMsg.body == 'Responda essa mensagem com o link do vídeo do tiktok'){
     tiktokmp4.execute(message, client, message.body);
 
   }
-  if(quotedMsg.body == 'MP3 | Responda essa mensagem com o link do video do tiktok'){
+  if(quotedMsg.body == 'MP3 | Responda essa mensagem com o link do vídeo do tiktok'){
     tiktokmp3.execute(message, client, message.body);
 
   }

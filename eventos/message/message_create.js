@@ -15,18 +15,20 @@ module.exports = async (client, message) => {
 
     //botoes
 
-    if(message.body == 'MP3') return client.sendMessage(message.from, "Em Breve!")
+    if(message.body == 'MP3'){
+        client.sendMessage(message.from, "Responda essa mensagem com o link do vídeo MP3")   
+    }
     if(message.body == 'MP4'){
-        client.sendMessage(message.from, 'Responda essa mensagem com o link do video')
+        client.sendMessage(message.from, 'Responda essa mensagem com o link do vídeo')
     }
 
     //tiktok button 
 
     if(message.body == 'Música'){
-        client.sendMessage(message.from, 'MP3 | Responda essa mensagem com o link do video do tiktok')
+        client.sendMessage(message.from, 'MP3 | Responda essa mensagem com o link do vídeo do tiktok')
     }
     if(message.body == 'Vídeo') {
-        client.sendMessage(message.from, 'Responda essa mensagem com o link do video do tiktok')
+        client.sendMessage(message.from, 'Responda essa mensagem com o link do vídeo do tiktok')
 
     }
 }
