@@ -1,5 +1,6 @@
 const Whatsapp = require('whatsapp-web.js');
 const axios = require('axios');
+const mandar = require('./mandar');
 module.exports = {
     name: "tiktomp3", 
     showajuda: false,
@@ -16,18 +17,9 @@ module.exports = {
           };
           
           axios.request(options).then(function (response) {
-              const options = {
-                method: 'POST',
-                url: 'https://api.encurtador.dev/encurtamentos',
-                data: {
-                    url: response.data.result.music.url_list[0], 
-                  }
-               
-              };
-              axios.request(options).then(function (response) {
-            client.sendMessage(message.from, `O Link de download do áudio: ${response.data.urlEncurtada}`)
-
-              })
+            const link2 = response.data.result.music.url_list[0];
+            mandar.execute(client, message, link2)
+              
           }).catch(function (error) {
               console.error(error);
           });

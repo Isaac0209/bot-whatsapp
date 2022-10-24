@@ -33,7 +33,7 @@ module.exports = {
           }
         };
         axios.request(options).then(function (response) {
-          const link = response.data.videos.items[1].url;
+          const link = response.data.audios.items[1].url;
           const options = {
             method: 'POST',
             url: 'https://api.encurtador.dev/encurtamentos',
