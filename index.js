@@ -5,7 +5,9 @@ const qrcode = require("qrcode-terminal");
 const client = new Whatsapp.Client({
     authStrategy: new Whatsapp.LocalAuth(),
     ffmpegPath: './ffmpeg/bin/ffmpeg.exe',
-  
+    puppeteer: {
+      executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  }
 });
 client.commands = new Collection();
 client.cooldowns = new Collection();
