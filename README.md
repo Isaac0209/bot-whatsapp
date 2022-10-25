@@ -1,1 +1,1 @@
-Um bot para o whatsapp com várias funções, fazer figurinhas|animadas, baixar vídeo do tiktok e youtube, reconhecer músicas que você mandar por áudio, tirar fundos das fotos ou figurinhas. Com passar do tempo irei melhorando ele e colocando novas funções com o apoio de vocês
+Um bot para o whatsapp com várias funções, fazer figurinhas|animadas, baixar vídeo do tiktok e youtube, reconhecer músicas que você mandar por áudio, tirar fundos das fotos ou figurinhas. Com passar do tempo irei melhorando ele e colocando novas funções com o apoio de vocês.
