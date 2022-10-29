@@ -5,8 +5,9 @@ Node JS e NPM Instalado. <br>
 Conhecimento básico de JS. <br>
 ## Instalação
 1 - Baixe ou clone o projeto, abra o terminal e dê npm install. <br>
-2 - Instale o FFMPEG para converter os vídeos para o formato WEBP para fazer figurinhas animadas. <br>
-3 - LINUX(Para funcionar em sistemas linux sem nenhuma GUI(EX:VPS), abra o index.js e adicione o seguinte código no client: 
+2 - Adicione uma pasta chamada ###upload### no diretório.
+3 - Instale o FFMPEG para converter os vídeos para o formato WEBP para fazer figurinhas animadas. <br>
+4 - LINUX(Para funcionar em sistemas linux sem nenhuma GUI(EX:VPS), abra o index.js e adicione o seguinte código no client: 
 ```js
 puppeteer: {	
 args: ['--no-sandbox'],
@@ -18,7 +19,7 @@ sudo apt install -y gconf-service libgbm-dev libasound2 libatk1.0-0 libc6 libcai
 
 ```
 
-4 - No client(Index.js) Altere o local do chrome de acordo com seu dispositivo. <br>
+5 - No client(Index.js) Altere o local do chrome de acordo com seu dispositivo. <br>
 WINDOWS: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe <br>
 MACOS: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome <br>
 LINUX: /usr/bin/google-chrome-stable <br>
