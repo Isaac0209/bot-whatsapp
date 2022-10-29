@@ -5,7 +5,7 @@ Node JS e NPM Instalado. <br>
 Conhecimento básico de JS. <br>
 ## Instalação
 1 - Baixe ou clone o projeto, abra o terminal e dê npm install. <br>
-2 - Adicione uma pasta chamada ###upload### no diretório.
+2 - Adicione uma pasta chamada upload no diretório. <br>
 3 - Instale o FFMPEG para converter os vídeos para o formato WEBP para fazer figurinhas animadas. <br>
 4 - LINUX(Para funcionar em sistemas linux sem nenhuma GUI(EX:VPS), abra o index.js e adicione o seguinte código no client: 
 ```js
