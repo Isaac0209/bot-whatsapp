@@ -41,7 +41,7 @@ module.exports = {
       setTimeout(() => {
         const archive = archiver('zip', { zlib: { level: 9 }});
         const stream = fs.createWriteStream(`./upload/${dir}.zip`);
-        /usr/bin/google-chrome-stable
+       
         return new Promise((resolve, reject) => {
           archive
             .directory(`./upload/${dir}`, false)
